@@ -58,6 +58,9 @@ BOARD_SUPER_PARTITION_GROUPS := moto_dynamic_partitions
 BOARD_MOTO_DYNAMIC_PARTITIONS_SIZE := 3250585600 # 3100 MB
 BOARD_MOTO_DYNAMIC_PARTITIONS_PARTITION_LIST := system vendor
 
+# Hack: prevent anti rollback
+PLATFORM_VERSION := 16.1.0
+
 # TWRP Configuration
 TARGET_RECOVERY_QCOM_RTC_FIX := true
 TW_THEME := portrait_hdpi
